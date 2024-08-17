@@ -16,6 +16,15 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('Hello from NowDigitaleasy');
 });
+
+app.get('/author', (req, res) => {
+  res.send({
+    Name:"surya prakash",
+    Phone:"9342483321",
+    github:"https://github.com/suryaprakashpvl/node-task"
+  });
+});
+
 app.use("/api",mainroutes)
 
 userAuth(passport);
